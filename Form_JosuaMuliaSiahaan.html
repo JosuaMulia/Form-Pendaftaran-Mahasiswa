@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML - Membuat Form</title>   
+    <style>
+
+     body{
+            background-image: url(bg3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        .title{
+            text-align: center;
+            font-size: 2.5em;
+            color: #000;
+        }
+    fieldset{
+        padding-left: 30vw;
+        border: 0;
+            
+    }
+    #videoFrame {
+        margin-bottom: -500px;   
+        margin-left: 50px;
+        border: 0; 
+    }
+ 
+    </style>
+
+    </head>
+ 
+<body>
+    <div >
+        <iframe id="videoFrame" src="https://www.youtube.com/embed/B-H9wRigQI4" width="350" height="400" allowfullscreen >
+
+        </iframe>
+    </div>
+<div id="heading">
+        <a href="#"><img style="width: 300px;height: 200px; margin-bottom: -200px;margin-left: 1000px;
+            " src="logo.png  " alt="Logo"/></a>
+    </div>
+
+
+<form action="prosessForm.php" method="GET">
+<!-- letakkan field di sini -->
+<fieldset>
+<legend>
+    <div class="a">
+  <h1 style="color: darkblue;" align="left">
+Formulir Pendaftaran Mahasiswa Baru
+<br></h1>
+        <h2>A.Data Pendaftar </h2>
+    
+    </div>    
+    </legend>
+<table>
+
+    <tr>
+        <td>Nama Lengkap</td>
+        <td>:</td>
+        <td><input type="name" name="nama"  required/><br /></td>
+    </tr>       
+
+    <tr>
+        <td>Tempat/Tanggal Lahir</td>
+        <td>:</td>
+        <td><input type="name" name="tempatLahir"/> <input type="date" name="tanggal" /></td>
+    </tr>
+
+    <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td><select name="agama">
+            <option value="kristen"> Kristen</option>
+            <option value="islam"> Islam</option>
+            <option value="katolik"> Katolik</option>
+            <option value="budha"> Budha</option>
+            <option value="hindu"> Hindu</option>
+        </select></td>
+    </tr>
+
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><textarea name="komentar" rows="4" cols="50" ></textarea> </td>
+    </tr>
+
+    <tr>
+        <td>No Telp/Hp</td>
+        <td>:</td>
+        <td><input type="number" name="number" /></td>
+    </tr>
+
+    <tr>
+        <td>Jenis Kelamin</td>
+        <td>:</td>
+        <td><input type="radio" name="jenisKelamin" /> Pria
+            <input type="radio" name="jenisKelamin" /> Wanita</td>
+    </tr>
+
+    <tr>
+        <td>Hobi</td>
+        <td>:</td>
+        <td><input type="name" name="Hobi"  required/><br /></td>
+    </tr>
+   
+    <tr>
+        <td>Email</td>
+        <td>:</td>
+        <td><input type="name" name="Email"  required/><br /></td>
+    </tr>
+
+    
+    <tr>
+        <td>Asal Sekolah</td>
+        <td>:</td>
+        <td><input type="name" name="Asal Sekolah"  required/><br /></td>
+    </tr>
+    
+    <tr>
+        <td>Jurusan Pilihan 1</td>
+        <td>:</td>
+        <td><select name="Jurusan Pilihan 1">
+            <option value="D3 Teknik Listrik"> D3 Teknik Listrik</option>
+            <option value="S1 Teknik Komputer"> S1 Teknik Komputer</option>
+            <option value="S1 Teknik Mesin"> S1 Teknik Mesin</option>
+            <option value="S1 Sistem informasi"> S1 Sistem informasi</option>
+            <option value="S1 Teknik Informatika"> S1 Teknik Informatika</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td>Jurusan Pilihan 2</td>
+        <td>:</td>
+        <td><select name="Jurusan Pilihan 1">
+            <option value="D3 Teknik Listrik"> D3 Teknik Listrik</option>
+            <option value="S1 Teknik Komputer"> S1 Teknik Komputer</option>
+            <option value="S1 Teknik Mesin"> S1 Teknik Mesin</option>
+            <option value="S1 Sistem informasi"> S1 Sistem informasi</option>
+            <option value="S1 Teknik Informatika"> S1 Teknik Informatika</option>
+        </select></td>
+    </tr>
+
+
+
+</table>
+    <div class="h2">
+        <h2>B.DATA ORANG TUA / WALI </h2>
+</div>
+<div style="display: flex;">
+    <div style="width: 30vw;">
+        <table>
+
+            <tr>
+                <td>Nama AYAH</td>
+                <td>:</td>
+                <td><input type="name" name="nama"  required/><br /></td>
+            </tr>  
+            <tr>
+                <td>Pekerjaan</td>
+                <td>:</td>
+                <td><input type="name" name="Pekerjaan"  required/><br /></td>
+            </tr>
+            <td>Penghasilan</td>
+                <td>:</td>
+                <td><select name="Penghasilan">
+                    <option value="Rp.3.000.000-Rp.5.000.000"> Rp.3.000.000-Rp.5.000.000</option>
+                    <option value="Rp.5.000.000-Rp.7.000.000"> Rp.5.000.000-Rp.7.000.000</option>
+                    <option value="Rp.7.000.000-Rp.9.000.000"> Rp.7.000.000-Rp.9.000.000</option>
+                    <option value="Rp.10.000.000-Rp.15.000.000"> Rp.10.000.000-Rp.15.000.000</option>
+                    <option value="Rp.20.000.000-Rp.30.000.000"> Rp.20.000.000-Rp.30.000.000</option>
+                </select></td>      
+                <tr>
+                    <td>Nama IBU</td>
+                    <td>:</td>
+                    <td><input type="name" name="nama"  required/><br /></td>
+                </tr>  
+                <tr>
+                    <td>Pekerjaan</td>
+                    <td>:</td>
+                    <td><input type="name" name="Pekerjaan"  required/><br /></td>
+                </tr>
+                <td>Penghasilan</td>
+                    <td>:</td>
+                    <td><select name="Penghasilan">
+                        <option value="Rp.3.000.000-Rp.5.000.000"> Rp.3.000.000-Rp.5.000.000</option>
+                        <option value="Rp.5.000.000-Rp.7.000.000"> Rp.5.000.000-Rp.7.000.000</option>
+                        <option value="Rp.7.000.000-Rp.9.000.000"> Rp.7.000.000-Rp.9.000.000</option>
+                        <option value="Rp.10.000.000-Rp.15.000.000"> Rp.10.000.000-Rp.15.000.000</option>
+                        <option value="Rp.20.000.000-Rp.30.000.000"> Rp.20.000.000-Rp.30.000.000</option>
+                    </select></td>         
+                
+           
+            <tr>
+                <td><input type="submit" name="submit" value="DAFTAR"/></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div  style="width: 30vw;">
+        <table>
+            <tr>
+                <td>Pas Foto</td>
+                <td>:</td>
+                <td><input type="file" name="foto" /></td>
+            </tr>
+        
+        </table>
+    </div>
+</div>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
